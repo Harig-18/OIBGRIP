@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".signup">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,7 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/text_view_1"
-            android:text="Login"
+            android:text="Signup"
             android:textStyle="bold"
             android:textSize="50dp"
             android:layout_marginTop="100dp"
@@ -34,33 +33,23 @@
             android:layout_marginTop="50dp"
             android:hint="Password"
             android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_2"
+            android:id="@+id/edit_text_3"
+            android:layout_marginTop="50dp"
+            android:hint="Confirm Password"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:layout_below="@+id/edit_text_2"
+            android:text="Signup"
+            android:layout_below="@+id/edit_text_3"
             android:layout_marginLeft="120dp"
             android:id="@+id/button_1"
-            android:onClick="opentodo"
+            android:onClick="openlogin"
             android:layout_marginTop="50dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_1"
-            android:layout_marginTop="50dp"
-            android:text="Don't have an Account?"
-            android:layout_below="@id/button_1"
-            android:layout_marginLeft="75dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/button_1"
-            android:layout_toRightOf="@id/text_1"
-            android:layout_marginTop="50dp"
-            android:text="Signup"
-            android:onClick="opensignup"
-            android:textColor="@color/purple_500"/>
-
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
